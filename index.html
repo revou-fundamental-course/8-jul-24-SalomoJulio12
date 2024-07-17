@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>RevoU Mini Project - Calculator BMI</title>
+  </head>
+  <body>
+    <!-- MAIN TITLE -->
+    <header class="main-title">
+      <h1>Calculator BMI</h1>
+    </header>
+
+    <main class="main-section">
+
+
+      <!-- LEFT SECTION -->
+      <section class="left-section">
+        <!-- TITLE LEFT SECTION -->
+        <h1>Calculator BMI</h1>
+
+        <!-- LEFT MAIN ARTICLE -->
+        <article class="main-article">
+          <p class="information-main">
+            Berat badan ideal adalah impian semua orang. Tidak hanya memiliki
+            bentuk tubuh yang menunjang penampilan, berat badan ideal juga
+            menandakan kondisi tubuh yang sehat. Bagaimana denganmu? Yuk, hitung
+            sekarang di kalkulator BMI
+          </p>
+        </article>
+
+        <!-- LEFT FORM SECTION -->
+        <section class="form-input">
+          <h3>Jenis Kelamin</h3>
+          <form id="bmiForm">
+            <div class="input-man-woman">
+              <input
+                class="input-radio-man"
+                type="radio"
+                id="man"
+                name="gender"
+                value="male"
+              /><label for="man">Pria</label>
+              <input
+                class="input-radio-woman"
+                type="radio"
+                id="woman"
+                name="gender"
+                value="female"
+              /><label for="woman">Wanita</label>
+            </div>
+
+            <div class="input-kg-th-cm">
+              <div class="input-berat">
+                <label class="kg" for="berat-badan">Berat Badan (kg)</label>
+                <input type="number" id="berat-badan" name="weight" />
+              </div>
+              <div class="input-usia">
+                <label class="th" for="usia">Usia (tahun)</label>
+                <input type="number" id="usia" name="age" />
+              </div>
+              <div class="input-tinggi">
+                <label class="cm" for="tinggi-badan">Tinggi Badan (cm)</label>
+                <input type="number" id="tinggi-badan" name="height" />
+              </div>
+            </div>
+            <div>
+              <button
+                class="button-hitung"
+                type="button"
+                onclick="calculateBMI()"
+              >Hitung
+              </button>
+              <button class="button-reset" type="reset">Reset</button>
+            </div>
+          </form>
+        </section>
+
+        <!-- LEFT INFORMATION SECTION -->
+        <section class="information-section">
+          <article class="information-section-1">
+            <p>Keunggulan Fitur</p>
+            <p>
+              1. Menghitung berat badan <br />
+              2. Menentukan kategori berat badan ideal atau tidak <br />
+              3. Mempersiapkan program penurunan berat badan
+            </p>
+          </article>
+
+          <article class="information-section-2">
+            <p>
+              Kalkulator ini hanya boleh digunakan oleh orang dewasa (wanita
+              hamil atau menyusui tidak boleh mengandalkan pembacaan BMI ini)
+              dan tindakan yang harus diambil berdasarkan nilainya selain
+              berkonsultasi dengan orang yang memenuhi syarat seperti dokter.
+            </p>
+          </article>
+
+          <article class="information-section-3">
+            <p>
+              Kalkulator akan memberi Anda gambaran tentang perbandingan berat
+              badan Anda dengan nilai umum. Indeks Massa Tubuh (atau BMI)
+              dihitung sebagai berat badan Anda (dalam kilogram) dibagi dengan
+              kuadrat tinggi badan Anda (dalam meter) atau BMI = Kg/m2.
+            </p>
+          </article>
+        </section>
+      </section>
+
+
+      
+      <!-- RIGHT SECTION -->
+      <section class="right-section">
+        <!-- RESULT ARTICLE -->
+        <article>
+          <!-- HEADER RESULT -->
+          <header>
+            <h1>Result</h1>
+          </header>
+
+          <!-- RESULT SECTION -->
+          <section class="result" id="resultSection">
+            <!-- Hasil BMI akan ditampilkan di sini -->
+          </section>
+
+          <article class="result-article-1" id="resultArticle">
+            <!-- Hasil result article ditampilkan di sini -->
+          </article>
+
+          <article class="result-article-2" id="resultArticle2">
+            <!-- Hasil result article 2 ditampilkan di sini -->
+          </article>
+
+          <!-- Download Buttons -->
+        <div class="header-button">
+            <p>Download Aplikasi Kami</p>
+        </div>
+          <div class="buttons">
+            <div class="googleplay-button">
+                <div class="img-button-gp">
+                    <img src="./assets/img/GooglePlay.png" alt="Google Play" />
+                </div>
+                <div class="word-button-gp">
+                    <p class="top-content">Android APP On</p>
+                    <p class="bot-content">Google Play</p>
+                </div>
+            </div>
+
+            <div class="appstore-button">
+                <div class="img-button-as">
+                    <img src="./assets/img/appstore.png" alt="App Store" />
+                </div>
+                <div class="word-button-as">
+                    <p class="top-content">Download On The</p>
+                    <p class="bot-content">App Store</p>
+            </div>
+          </div>
+
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
